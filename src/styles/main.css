@@ -18,6 +18,9 @@ header{
   padding: 20px;
   background-color: rgb(243, 202, 82);
 }
+header h1{
+  color: rgb(10, 104, 71);
+}
 .nav{
   display: flex;
   gap: 30px;
@@ -25,7 +28,7 @@ header{
 }
 .nav a{
   font-size: 1.2rem;
-  color: black;
+  color: rgb(10, 104, 71);
   padding: 10px;
 }
 .nav a:hover{
@@ -45,4 +48,59 @@ header{
   background-position: center;
 }
 
+.content-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 30px;
+}
+.card{
+  border-radius: 7px;
+  background-color: rgb(122, 186, 120);
+}
+.card div{
+  padding: 15px;
+}
+.card .resto-name{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.card img{
+  width: 100%;
+  border-radius: 7px;
+}
+.card .rating{
+  text-align: right;
+}
+.card .fa-star{
+  color: yellow;
+}
+.card .desc{
+  font-size: 14px;
+}
+.card .city{
+  margin-top: 8px;
+  font-size: 16px;
+  bottom: 0;
+}
+.card .fa-location-dot{
+  color: rgb(243, 56, 56);
+}
 
+/* footer */
+footer{
+  background-color: rgb(10, 104, 71);
+  width: 100%;
+  margin-top: 30px;
+}
+footer p{
+  text-align: center;
+  padding: 30px;
+  color: rgb(246, 233, 178);
+}
+
+@media screen and (min-width: 1200px){
+  main{
+    max-width: 1200px;
+  }
+}

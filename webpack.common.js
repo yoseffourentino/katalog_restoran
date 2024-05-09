@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { watch } = require('fs');
 
 module.exports = {
   entry: {
@@ -27,12 +28,13 @@ module.exports = {
       },
     ],
   },
+  watch: true,
   plugins: [
     new CleanWebpackPlugin(),
 
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/templates/index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
     }),
     new CopyWebpackPlugin({
       patterns: [
