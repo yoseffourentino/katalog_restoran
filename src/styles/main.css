@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+  margin: 0px auto;
+  font-family: 'Roboto Slab';
+}
+body{
+  background-color: rgb(246, 233, 178);
+}
+a{
+  text-decoration: none;
+}
+
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(243, 202, 82);
+}
+.nav{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav a{
+  font-size: 1.2rem;
+  color: black;
+  padding: 10px;
+}
+.nav a:hover{
+  background-color: rgb(246, 233, 178);
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+/* Main */
+.hero-image{
+  background-image: url('../public/images/heros/hero-image_3.jpg');
+  width: 500px;
+  height: 50%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
