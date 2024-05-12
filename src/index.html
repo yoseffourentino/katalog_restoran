@@ -2,24 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Restaurant Apps</title>
+        <link rel="stylesheet" href="styles/main.css">
         <script src="https://kit.fontawesome.com/7811b14296.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <a href="#maincontent" class="skip-link">skip to content</a>
         <header>
-            <h1>Hunger Apps</h1>
-            <div class="nav">
-                <a href="#">Home</a>
+            <h1>Eat <i class="fa-solid fa-utensils"></i> Yo</h1>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html">Home</a>
                 <a href="#">Favorite</a>
-                <a href="#">About us</a>
+                <a href="https://github.com/yoseffourentino">About us</a>
+            </div>
+            <div tabindex="0" class="hamburger-btn" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </header>
         <main>
             <div class="hero-image">
-        
+                
             </div>
-            <div class="content-container" id="content-container">
-
+            <h2 class="title-content">Explore Restaurant</h2>
+            <input type="search" id="search" placeholder="search...">
+            <div id="maincontent">
+                <div class="content-container maincontent" id="content-container">
+    
+                </div>
             </div>
         </main>
         <footer>
