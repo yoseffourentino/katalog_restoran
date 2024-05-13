@@ -54,6 +54,10 @@ header h1{
   display: none;
   cursor: pointer;
   align-items: center;
+  background-color: rgb(243, 202, 82);
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
 }
 .bar{
   display: block;
@@ -87,8 +91,10 @@ main{
 }
 
 #search{
+  display: inline-block;
   margin: 30px;
   width: 500px;
+  min-height: 44px;
   padding: 7px;
   border-radius: 7px;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
